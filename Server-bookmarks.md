@@ -1,5 +1,3 @@
-# Server Bookmarks
-
 *NOTE: This feature is not released yet, planned for 0.5.0*
 
 When using `pgweb` you might find that there's no way to quickly
