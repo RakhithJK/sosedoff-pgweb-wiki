@@ -1,13 +1,30 @@
-# Installation
+### Github Releases
 
 Please visit [Github Releases](https://github.com/sosedoff/pgweb/releases) to download a 
 precompiled binary for your operating system.
 
-Currently supported:
+### Homebrew
 
-- Mac OSX 64bit
-- Linux 32/64bit
-- Windows 32/64bit
+You can install pgweb as [Homebrew Cask](http://caskroom.io/).
+
+First, make sure cask is installed:
+
+```
+brew install caskroom/cask/brew-cask
+```
+
+Then install pgweb:
+
+```
+brew cask install pgweb
+```
+
+### Supported Platforms
+
+- OSX 64 bit
+- Linux 32/64 bit
+- Windows 32/64 bit
+- ARM 64 bit
 
 Supported PostgreSQL versions:
 
