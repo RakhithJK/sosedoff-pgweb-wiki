@@ -21,7 +21,7 @@ ssl_mode = "disable"
 
 To keep things short, you can just define an url:
 
-```
+```TOML
 url = "postgres://user:password@host:port/database?sslmode=mode"
 ```
 
