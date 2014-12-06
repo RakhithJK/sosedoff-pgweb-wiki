@@ -1,5 +1,3 @@
-# Build from source
-
 Go 1.3+ is required. You can install Go with `homebrew`:
 
 ```
