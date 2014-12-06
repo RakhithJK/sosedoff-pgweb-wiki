@@ -6,4 +6,5 @@ Welcome to the pgweb wiki!
 
 Features:
 
+- [SSH Gateway](https://github.com/sosedoff/pgweb/wiki/SSH-Gateway)
 - [Server Bookmarks](https://github.com/sosedoff/pgweb/wiki/Server-bookmarks)
