@@ -14,7 +14,7 @@ Example plist for OSX:
     <string>homebrew.mxcl.pgweb</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/usr/local/bin/pgweb</string>
+      <string>/usr/local/bin/pgweb -s</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
