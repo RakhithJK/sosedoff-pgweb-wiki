@@ -1,5 +1,3 @@
-*NOTE: This feature is not released yet, planned for 0.5.0*
-
 When using `pgweb` you might find that there's no way to quickly
 establish connection to a server even if you've connected to it 
 many times before. Thats's correct, pgweb does ton keep track of 
