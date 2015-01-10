@@ -16,7 +16,7 @@ This will produce `pgweb` binary in the current directory.
 There's also a task to compile binaries for other operating systems:
 
 ```
-make build
+make release
 ```
 
 Under the hood it uses [gox](https://github.com/mitchellh/gox). Compiled binaries
