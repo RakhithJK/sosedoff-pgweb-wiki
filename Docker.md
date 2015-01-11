@@ -1,36 +1,33 @@
-Build the image:
+## Requirements
+
+In order to test and run pgweb in docker containers, make sure
+you have docker installed. On linux systems, you can use docker
+natively, on OSX there are few ways of installing it:
+
+- [boot2docker](http://boot2docker.io/)
+- [Vagrant](https://www.vagrantup.com/)
+
+### Build Image
+
+To build a new image, change directory to `pgweb` source. Then run:
 
 ```
 docker build -t pgweb .
 ```
 
-Start container:
-
-```
-docker run [OPTIONS of docker] pgweb [OPTIONS of pgweb]
-```
-
 ### Example
 
-Run postgresql container:
+First, start PostgreSQL in the container (using official image):
 
 ```
-docker run -d \
-           --name="postgresql" \
-           -p 5432:5432 \     
-           -e USER="testuser" \
-           -e DB="testdb" \
-           -e PASS="test123" \
-           paintedfox/postgresql
+docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres
 ```
 
-Run pgweb container:
+After postgres container has started, run `docker inspect` and
+grab its private ip. Then start pgweb container:
 
 ```
-docker run -d \
-           -p 8080:8080 pgweb \
-           --url postgres://testuser:test123@your-ip:5432/testdb \
-           --bind 0.0.0.0
+docker run -p 8000:8000 -e DATABASE_URL=postgres://postgres:postgres@ip:5432/postgres
 ```
 
-Then open [http://your-ip:8082](#) in your browser.
+It should start web server on `http://localhost:8080`
