@@ -8,4 +8,4 @@ Extras:
 
 - [OSX Plist](https://github.com/sosedoff/pgweb/wiki/Plist)
 - [SSH Gateway](https://github.com/sosedoff/pgweb/wiki/SSH-Gateway)
-- [Server Bookmarks](https://github.com/sosedoff/pgweb/wiki/Server-bookmarks)
+- [Server Bookmarks](https://github.com/sosedoff/pgweb/wiki/Server-Connection-Bookmarks)
