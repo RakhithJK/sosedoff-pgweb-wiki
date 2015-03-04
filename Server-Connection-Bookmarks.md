@@ -11,7 +11,7 @@ Here's an example of a bookmark file (`~/.pgweb/bookmarks/server.toml`):
 
 ```TOML
 host = "localhost"
-port = 5432
+port = "5432"
 user = "postgres"
 database = "mydatabase"
 ssl_mode = "disable"
