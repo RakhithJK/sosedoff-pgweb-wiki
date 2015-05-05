@@ -10,7 +10,7 @@ ssh -Ng -L 5000:localhost:5432 user@mysite.com
 
 From SSH man page:
 
-- `-N` - Do not execute a remote command. This is useful for just for warding ports
+- `-N` - Do not execute a remote command. This is useful for just forwarding ports
 - `-g` - Allows remote hosts to connect to local forwarded ports.
 - `-L` - Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side. Format: `[bind_address:]port:host:hostport`
 
