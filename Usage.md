@@ -28,16 +28,19 @@ Usage:
 Application Options:
   -v, --version    Print version
   -d, --debug      Enable debugging mode (false)
-  -s, --skip-open  Skip browser open on start
       --url=       Database connection string
-      --host=      Server hostname or IP (localhost)
+      --host=      Server hostname or IP
       --port=      Server port (5432)
-      --user=      Database user (postgres)
+      --user=      Database user
       --pass=      Password for user
-      --db=        Database name (postgres)
-      --ssl=       SSL option (disable)
+      --db=        Database name
+      --ssl=       SSL option
       --bind=      HTTP server host (localhost)
-      --listen=    HTTP server listen port (8080)
+      --listen=    HTTP server listen port (8081)
       --auth-user= HTTP basic auth user
       --auth-pass= HTTP basic auth password
+  -s, --skip-open  Skip browser open on start
+
+Help Options:
+  -h, --help       Show this help message
 ```
