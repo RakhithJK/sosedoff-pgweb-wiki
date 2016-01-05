@@ -14,7 +14,7 @@ host = "localhost"
 port = "5432"
 user = "postgres"
 database = "mydatabase"
-ssl_mode = "disable"
+ssl = "disable"
 ``` 
 
 To keep things short, you can just define an url:
