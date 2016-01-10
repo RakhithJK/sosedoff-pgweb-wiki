@@ -40,6 +40,7 @@ Application Options:
       --auth-user= HTTP basic auth user
       --auth-pass= HTTP basic auth password
   -s, --skip-open  Skip browser open on start
+      --sessions   Enable multiple database sessions (false)
 
 Help Options:
   -h, --help       Show this help message
