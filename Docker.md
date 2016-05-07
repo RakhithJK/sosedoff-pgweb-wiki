@@ -20,14 +20,13 @@ docker build -t pgweb .
 First, start PostgreSQL in the container (using official image):
 
 ```
-docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres
+docker run -d -p 5432:5432 --name db -e POSTGRES_PASSWORD=postgres postgres
 ```
 
-After postgres container has started, run `docker inspect` and
-grab its private ip. Then start pgweb container:
+Then start pgweb container:
 
 ```
-docker run -p 8081:8081 -e DATABASE_URL=postgres://postgres:postgres@ip:5432/postgres
+docker run -p 8081:8081 --link db:db -e DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
 ```
 
 It should start web server on `http://localhost:8081`
