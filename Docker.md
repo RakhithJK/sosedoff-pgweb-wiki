@@ -26,7 +26,7 @@ docker run -d -p 5432:5432 --name db -e POSTGRES_PASSWORD=postgres postgres
 Then start pgweb container:
 
 ```
-docker run -p 8081:8081 --link db:db -e DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
+docker run -p 8081:8081 --link db:db -e DATABASE_URL=postgres://postgres:postgres@db:5432/postgres sosedoff/pgweb
 ```
 
 It should start web server on `http://localhost:8081`
