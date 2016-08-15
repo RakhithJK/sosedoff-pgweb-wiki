@@ -4,7 +4,7 @@ In order to test and run pgweb in docker containers, make sure
 you have docker installed. On linux systems, you can use docker
 natively, on OSX there are few ways of installing it:
 
-- [boot2docker](http://boot2docker.io/)
+- [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
 - [Vagrant](https://www.vagrantup.com/)
 
 ### Build Image
