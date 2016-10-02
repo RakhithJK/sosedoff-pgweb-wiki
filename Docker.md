@@ -8,6 +8,16 @@ natively, on OSX there are few ways of installing it:
 - [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
 - [Vagrant](https://www.vagrantup.com/)
 
+### Pull Image
+
+Pgweb has an official docker image: https://hub.docker.com/r/sosedoff/pgweb/
+
+To pull latest version, run:
+
+```
+docker pull sosedoff/pgweb
+```
+
 ### Build Image
 
 To build a new image, change directory to `pgweb` source. Then run:
