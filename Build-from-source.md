@@ -1,4 +1,4 @@
-Go 1.3+ is required. You can install Go with `homebrew`:
+Go 1.7 is required. You can install Go with `homebrew`:
 
 ```
 brew install go
