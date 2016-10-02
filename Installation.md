@@ -33,6 +33,7 @@ Supported PostgreSQL versions:
 - 9.3
 - 9.4
 - 9.5
+- 9.6
 
 Older versions of PostgreSQL might also work but this project is not tested on 
 8.x branches.
