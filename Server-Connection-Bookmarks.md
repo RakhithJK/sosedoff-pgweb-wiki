@@ -1,6 +1,6 @@
 When using `pgweb` you might find that there's no way to quickly
 establish connection to a server even if you've connected to it 
-many times before. Thats's correct, pgweb does ton keep track of 
+many times before. Thats's correct, pgweb does not keep track of 
 those connections. So bookmarks feature comes into play.
 It basically allows you to keep connection settings to your most
 frequent servers as a bookmarks with credentials stored in a file
