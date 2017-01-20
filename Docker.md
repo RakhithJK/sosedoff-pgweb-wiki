@@ -53,11 +53,11 @@ pgweb:
   ports: 
     - "8081:8081" 
   links: 
-    - postgres:postgres  # my database container is called postgres, not db like above
+    - postgres:postgres  # my database container is called postgres, not db
   environment:
     - DATABASE_URL=postgres://postgres:postgres@postgres:5432/postgres
   depends_on:
-    - postgres  # my database container is called postgres, not db like above
+    - postgres  # my database container is called postgres, not db
 ```
 Note that the `depends_on` keyword requires docker-compose version 2 and up. 
 
