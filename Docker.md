@@ -41,3 +41,27 @@ docker run -p 8081:8081 --link db:db -e DATABASE_URL=postgres://postgres:postgre
 ```
 
 It should start web server on `http://localhost:8081`
+
+## docker-compose
+
+If you already have a `postgres` container in your setup, you can add `pgweb` to `docker-compose.yml` with the following: 
+```
+pgweb:
+  container_name: pgweb  # optional
+  restart: always  # optional
+  image: sosedoff/pgweb
+  ports: 
+    - "8081:8081" 
+  links: 
+    - postgres:postgres
+  environment:
+    - DATABASE_URL=postgres://postgres:postgres@postgres:5432/postgres
+  depends_on:
+    - postgres
+```
+Note that the `depends_on` keyword requires docker-compose version 2 and up. 
+
+Finally, note that as a default, the postgres container does not have SSL enabled, so just disable that.
+```
+DATABASE_URL=postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
+```
