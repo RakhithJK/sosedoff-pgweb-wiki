@@ -5,7 +5,7 @@ precompiled binary for your operating system.
 
 ### Homebrew
 
-You can install pgweb with [Homebrew Cask](http://caskroom.io/), which is integrated with [Homebrew](http://brew.sh).
+You can install pgweb with [Homebrew Cask](https://caskroom.github.io/), which is integrated with [Homebrew](http://brew.sh).
 
 With `brew` installed, simply type:
 ```
