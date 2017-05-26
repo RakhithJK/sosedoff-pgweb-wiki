@@ -12,9 +12,14 @@ Example plist for OSX:
     </dict>
     <key>Label</key>
     <string>homebrew.mxcl.pgweb</string>
+    <key>Program</key>
+    <array>
+      <string>/usr/local/bin/pgweb</string>
+    </array>
     <key>ProgramArguments</key>
     <array>
-      <string>/usr/local/bin/pgweb -s</string>
+      <string>/usr/local/bin/pgweb</string>
+      <string>-s</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
