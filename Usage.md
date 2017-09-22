@@ -26,26 +26,31 @@ Usage:
   pgweb [OPTIONS]
 
 Application Options:
-  -v, --version       Print version
-  -d, --debug         Enable debugging mode (false)
-      --url=          Database connection string
-      --host=         Server hostname or IP
-      --port=         Server port (5432)
-      --user=         Database user
-      --pass=         Password for user
-      --db=           Database name
-      --ssl=          SSL option
-      --bind=         HTTP server host (localhost)
-      --listen=       HTTP server listen port (8081)
-      --auth-user=    HTTP basic auth user
-      --auth-pass=    HTTP basic auth password
-  -s, --skip-open     Skip browser open on start
-      --sessions      Enable multiple database sessions (false)
-      --prefix=       Add a url prefix
-      --readonly      Run database connection in readonly mode
-      --lock-session  Lock session to a single database connection (false)
-  -b, --bookmark=     Bookmark to use for connection. Bookmark files are stored under $HOME/.pgweb/bookmarks/*.toml
+  -v, --version          Print version
+  -d, --debug            Enable debugging mode (false)
+      --url=             Database connection string
+      --host=            Server hostname or IP
+      --port=            Server port (5432)
+      --user=            Database user
+      --pass=            Password for user
+      --db=              Database name
+      --ssl=             SSL option
+      --bind=            HTTP server host (localhost)
+      --listen=          HTTP server listen port (8081)
+      --auth-user=       HTTP basic auth user
+      --auth-pass=       HTTP basic auth password
+  -s, --skip-open        Skip browser open on start
+      --sessions         Enable multiple database sessions (false)
+      --prefix=          Add a url prefix
+      --readonly         Run database connection in readonly mode
+      --lock-session     Lock session to a single database connection (false)
+  -b, --bookmark=        Bookmark to use for connection. Bookmark files are stored under $HOME/.pgweb/bookmarks/*.toml
+      --bookmarks-dir=   Overrides default directory for bookmark files to search
+      --no-pretty-json   Disable JSON formatting feature for result export (false)
+      --connect-backend= Enable database authentication through a third party backend
+      --connect-token=   Authentication token for the third-party connect backend
+      --connect-headers= List of headers to pass to the connect backend
 
 Help Options:
-  -h, --help          Show this help message
+  -h, --help             Show this help message
 ```
