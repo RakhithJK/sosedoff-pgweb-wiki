@@ -1,5 +1,3 @@
-# Connect Backend
-
 Pgweb offers a way to create new connection with credentials obtained from a third
 party API. This is a useful feature for people who run Pgweb for their clients and
 need the ability to setup connections without any UI interactions. It is possible
