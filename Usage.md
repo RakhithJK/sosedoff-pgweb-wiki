@@ -54,3 +54,12 @@ Application Options:
 Help Options:
   -h, --help             Show this help message
 ```
+
+### Environment variables available
+```
+DATABASE_URL: Database connection string
+SESSIONS: Enable multiple database sessions
+LOCK_SESSION: lock session to a single database connection
+AUTH_USER: HTTP basic auth user
+AUTH_PASS: HTTP basic auth password
+```
