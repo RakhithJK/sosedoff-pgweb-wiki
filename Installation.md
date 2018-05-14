@@ -1,17 +1,3 @@
-### Github Releases
-
-Please visit [Github Releases](https://github.com/sosedoff/pgweb/releases) to download a 
-precompiled binary for your operating system.
-
-### Homebrew
-
-You can install pgweb with [Homebrew Cask](https://caskroom.github.io/), which is integrated with [Homebrew](http://brew.sh).
-
-With `brew` installed, simply type:
-```
-brew cask install pgweb
-```
-
 ### Supported Platforms
 
 - OSX 64 bit
@@ -21,12 +7,53 @@ brew cask install pgweb
 
 Supported PostgreSQL versions:
 
-- 9.1
-- 9.2
-- 9.3
-- 9.4
-- 9.5
-- 9.6
+- 9.1-9.6
+- 10.x
 
-Older versions of PostgreSQL might also work but this project is not tested on 
-8.x branches.
+Older versions (< 9) are not supported, however they might still work.
+
+### Github Releases
+
+Pgweb binaries and source code for each version is distributed via [Github Releases][1]
+
+### Docker
+
+Download an [official][3] Pgweb image:
+
+```
+docker pull sosedoff/pgweb
+```
+
+### Mac
+
+Install latest Pgweb version with [Homebrew][2]:
+
+```
+brew update
+brew install pgweb
+```
+
+### Linux
+
+Download and install Pgweb manually:
+
+```
+curl -s https://api.github.com/repos/sosedoff/pgweb/releases/latest \
+  | grep linux_amd64.zip \
+  | grep download \
+  | cut -d '"' -f 4 \
+  | wget -qi - \
+  && unzip pgweb_linux_amd64.zip \
+  && rm pgweb_linux_amd64.zip \
+  && mv pgweb_linux_amd64 /usr/local/bin/pgweb
+```
+
+### Windows
+
+There's no automated way to install Pgweb on Windows. You should download
+the ZIP archive for your OS: `pgweb_windows_amd64.exe.zip` then unpack it and
+move to applications folder.
+
+[1]: https://github.com/sosedoff/pgweb/releases
+[2]: http://brew.sh 
+[3]: https://hub.docker.com/r/sosedoff/pgweb/
