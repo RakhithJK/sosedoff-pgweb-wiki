@@ -110,7 +110,7 @@ list them in as a CLI argument:
 --connect-headers=X-Forwarded-Access-Token,X-Forwarded-Email,X-Forwarded-User
 ```
 
-Header name intended for the passthrough will be converted to the converted to the lower case. 
+Header name intended for the passthrough will be converted to lower case. 
 Header values will be left untouched.
 
 In order to establish the connection on pgweb's side, your API must respond with HTTP status 200.
