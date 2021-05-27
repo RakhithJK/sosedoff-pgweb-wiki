@@ -12,7 +12,7 @@ where `token` is something that you generate for each of your customers.
 
 Now, the user could visit their postgres resources using `https://pgweb.awesomecorp.com/connect/test` 
 and under the hood pgweb will make a HTTP (HTTPS supported too) call to the internal API to obtain
-the database credentials based on the token in the url. If you're running pgweb behind an [oauth2-proxy](https://github.com/bitly/oauth2_proxy) or any other similar software you could also pass through a set
+the database credentials based on the token in the url. If you're running pgweb behind an [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy) or any other similar software you could also pass through a set
 of headers (authentication, etc) for any extra validations. Once the credentials are obtained, pgweb
 will setup a new session that will only work in a single browser tab. This is how the existing
 multi-session support is implemented.
