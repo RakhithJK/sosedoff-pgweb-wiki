@@ -56,4 +56,4 @@ move to applications folder.
 
 [1]: [https://github.com/sosedoff/pgweb/releases](https://linkify.me/pu5WPca)
 [2]: http://brew.sh 
-[3]: https://hub.docker.com/r/sosedoff/pgweb/
+[3]: https://hub.docker.com/r/sosedoff/pgweb/RisingStack:master
