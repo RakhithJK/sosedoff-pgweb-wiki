@@ -34,7 +34,10 @@ Application Options:
       --user=            Database user
       --pass=            Password for user
       --db=              Database name
-      --ssl=             SSL option
+      --ssl=             SSL mode
+      --ssl-rootcert=    SSL certificate authority file
+      --ssl-cert=        SSL client certificate file
+      --ssl-key=         SSL client certificate key file
       --bind=            HTTP server host (default: localhost)
       --listen=          HTTP server listen port (default: 8081)
       --auth-user=       HTTP basic auth user
@@ -55,9 +58,18 @@ Application Options:
       --idle-timeout=    Set connection idle timeout in minutes (default: 180)
       --cors             Enable Cross-Origin Resource Sharing (CORS)
       --cors-origin=     Allowed CORS origins (default: *)
+      --binary-codec=    Codec for binary data serialization, one of 'none', 'hex', 'base58', 'base64' (default: none)
 
 Help Options:
   -h, --help             Show this help message
+
+Available environment variables:
+  PGWEB_DATABASE_URL  Database connection string
+  PGWEB_URL_PREFIX    HTTP server path prefix
+  PGWEB_SESSIONS:     Enable multiple database sessions
+  PGWEB_LOCK_SESSION  Lock session to a single database connection
+  PGWEB_AUTH_USER     HTTP basic auth username
+  PGWEB_AUTH_PASS     HTTP basic auth password
 ```
 
 ### Environment variables available
