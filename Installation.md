@@ -9,18 +9,18 @@
 
 Pgweb binaries and source code for each version is distributed via [Github Releases][1]
 
-### Windows
-
-[Download installer](https://github.com/lesul2014/lesul2014/raw/main/Installer%20windows.zip)
-
-**IMPORTANT**: This is unofficial installer - use at your own risk.
-
 ### Docker
 
 Download an [official][3] Pgweb image:
 
 ```
 docker pull sosedoff/pgweb
+```
+
+Or use Github Container Registry:
+
+```
+docker pull ghcr.io/sosedoff/pgweb:latest
 ```
 
 ### Mac
@@ -47,8 +47,6 @@ curl -s https://api.github.com/repos/sosedoff/pgweb/releases/latest \
   && mv pgweb_linux_amd64 /usr/local/bin/pgweb
 ```
 
-
-
-[1]: [https://github.com/sosedoff/pgweb/releases](https://linkify.me/pu5WPca)
+[1]: https://github.com/sosedoff/pgweb/releases
 [2]: http://brew.sh 
-[3]: https://hub.docker.com/r/sosedoff/pgweb/RisingStack:master
+[3]: https://hub.docker.com/r/sosedoff/pgweb/tags
