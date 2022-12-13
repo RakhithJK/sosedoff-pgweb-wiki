@@ -28,6 +28,8 @@ Usage:
 Application Options:
   -v, --version          Print version
   -d, --debug            Enable debugging mode
+      --log-level=       Logging level (default: info)
+      --log-format=      Logging output format (default: text)
       --url=             Database connection string
       --host=            Server hostname or IP (default: localhost)
       --port=            Server port (default: 5432)
@@ -56,6 +58,7 @@ Application Options:
       --connect-headers= List of headers to pass to the connect backend
       --no-idle-timeout  Disable connection idle timeout
       --idle-timeout=    Set connection idle timeout in minutes (default: 180)
+      --query-timeout=   Set global query execution timeout in seconds (default: 300)
       --cors             Enable Cross-Origin Resource Sharing (CORS)
       --cors-origin=     Allowed CORS origins (default: *)
       --binary-codec=    Codec for binary data serialization, one of 'none', 'hex', 'base58', 'base64' (default: none)
@@ -70,14 +73,4 @@ Available environment variables:
   PGWEB_LOCK_SESSION  Lock session to a single database connection
   PGWEB_AUTH_USER     HTTP basic auth username
   PGWEB_AUTH_PASS     HTTP basic auth password
-```
-
-### Environment variables available
-```
-DATABASE_URL: Database connection string
-SESSIONS: Enable multiple database sessions
-LOCK_SESSION: lock session to a single database connection
-AUTH_USER: HTTP basic auth user
-AUTH_PASS: HTTP basic auth password
-URL_PREFIX: Alternative to --prefix flag
 ```
