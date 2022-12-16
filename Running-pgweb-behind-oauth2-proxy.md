@@ -43,7 +43,7 @@ If everything configured correctly, you should be able to hit the endpoints:
 - `http://localhost:8081` - Pgweb UI, this should work if your database exists, make sure you have it running first before trying to authenticate with Google
 - `http://localhost:4180` - On the first visit you will be redirected to Google OAuth concent page, you can choose any Google account from there.
 
-You're all set. 
+You're all set. For any additional information on provider setup, visit [official documentation](https://oauth2-proxy.github.io/oauth2-proxy/docs/configuration/oauth_provider#google-auth-provider).
 
 ## Troubleshooting
 
