@@ -11,10 +11,10 @@ A tool like [oauth2-proxy](https://oauth2-proxy.github.io/oauth2-proxy/) comes v
 Follow these steps to configure Google OAuth for locally running Pgweb.
 
 1. Make sure to download the latest `oauth2-proxy` release. Head over to Github: https://github.com/oauth2-proxy/oauth2-proxy/releases
-2. Next, we need to create and configure a new Google project, head over to [Developer Console](https://console.cloud.google.com/apis/dashboard) Once you create a new project, you must configure `Oauth Concent screen`, this is where you can pick `Internal` or `External` user type. Pick `Internal` is your Google organization permits, otherwise `External` will do for testing. Follow prompts for application setup.
-3. Switch to `Credentials` section and click on `Create Credentials` button in the UI. From the dropdown, pick `OAuth Client ID`. Next, enter `Web Application` in the `Application Type` dropdown.
+2. Next, we need to create and configure a new Google project, head over to [Developer Console](https://console.cloud.google.com/apis/dashboard). Once you create a new project, you must configure `Oauth Concent screen`, this is where you can pick `Internal` or `External` user type. Pick `Internal` if your Google organization permits (that'll allow logging in only with corp email), otherwise `External` will be okay for testing. Follow prompts for application setup.
+3. Switch to `Credentials` section and click on `Create Credentials`. From the dropdown, pick `OAuth Client ID`. Next, enter `Web Application` in the `Application Type` dropdown.
 4. On the same page, enter `http://localhost:4180/oauth2/callback` into `Authorized redirect URIs` input field. Hit `Create`.
-5. On the next screen you will be prompted the OAuth client ID and secret ID, save these values as we will need them to configure out OAuth proxy later.
+5. On the next screen you will be prompted the OAuth client ID and secret ID, save these values as we will need them to configure our OAuth in the next step.
 
 To start the proxy, replace `--client-id`, `--client-secret` and `--cookie-secret` values:
 
@@ -22,15 +22,17 @@ To start the proxy, replace `--client-id`, `--client-secret` and `--cookie-secre
 ./oauth2-proxy \
   --skip-provider-button=true \
   --provider=google \
-  --client-id=XXX.apps.googleusercontent.com \
-  --client-secret=<REPLACEME> \
-  --cookie-secret=<REPLACEME> \
+  --client-id=<REPLACE ME: OAUTH_CLIENT_ID> \
+  --client-secret=<REPLACE ME: OAUTH CLIENT SECRET> \
+  --cookie-secret=<GENERATE RANDOM STRING> \
   --cookie-expire=4h0m0s \
   --email-domain='*' \
   --http-address=0.0.0.0:4180 \
   --upstream=http://localhost:8081 \
   --redirect-url=http://localhost:4180/oauth2/callback
 ```
+
+Keep in mind, the `--email-domain='*'` setting will allow ANY Google email, which is okay for testing, but should be swapped out for real deployments.
 
 Next, in the new terminal window, start pgweb process:
 
@@ -40,8 +42,8 @@ pgweb --db=my-awesome-database --bind=0.0.0.0
 
 If everything configured correctly, you should be able to hit the endpoints:
 
-- `http://localhost:8081` - Pgweb UI, this should work if your database exists, make sure you have it running first before trying to authenticate with Google
-- `http://localhost:4180` - On the first visit you will be redirected to Google OAuth concent page, you can choose any Google account from there.
+- `http://localhost:8081` - Pgweb UI, should work if your database exists, make sure you have it running first before trying to authenticate with Google
+- `http://localhost:4180` - On the first visit you will be redirected to Google OAuth consent page, you can choose any Google account from there.
 
 You're all set. For any additional information on provider setup, visit [official documentation](https://oauth2-proxy.github.io/oauth2-proxy/docs/configuration/oauth_provider#google-auth-provider).
 
