@@ -18,6 +18,12 @@ To pull latest version, run:
 docker pull sosedoff/pgweb
 ```
 
+Or pull from Github Container Registry:
+
+```
+docker pull ghcr.io/sosedoff/pgweb:latest
+```
+
 ### Build Image
 
 To build a new image, change directory to `pgweb` source. Then run:
