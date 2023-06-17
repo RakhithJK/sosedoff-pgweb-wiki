@@ -14,7 +14,7 @@ host = "localhost"
 port = 5432
 user = "postgres"
 database = "mydatabase"
-ssl = "disable"
+sslmode = "disable"
 ```
 
 Here's an example of a bookmark file with SSH options (`~/.pgweb/bookmarks/ssh-tunnel-to-db.toml`). Use this to create an SSH connection through a "Jump server" using an SSH credential file, to another database (such as AWS RDS):
